@@ -1,0 +1,1169 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>Shop</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__inner">
+        <div class="header__title">
+          <div class="extra-header container">
+            <nav class="extra-header__menu">
+              <ul class="extra-header__menu-list hidden-mobile">
+                <li class="extra-header__menu-item">
+                  <a href="/" class="extra-header__menu-link">О нас</a>
+                </li>
+                <li class="extra-header__menu-item">
+                  <a href="/" class="extra-header__menu-link"
+                    >Оплата и доставка</a
+                  >
+                </li>
+                <li class="extra-header__menu-item">
+                  <a href="/" class="extra-header__menu-link">Новости</a>
+                </li>
+                <li class="extra-header__menu-item">
+                  <a href="/" class="extra-header__menu-link">Контакты</a>
+                </li>
+              </ul>
+              <ul class="extra-header__menu-list visible-mobile">
+                <li class="extra-header__menu-item">
+                  <a href="/" class="extra-header__menu-link">
+                    <span
+                      ><svg
+                        width="23"
+                        height="24"
+                        viewBox="0 0 23 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M22.1494 17.7016L19.3231 14.718C18.5439 13.8955 17.276 13.8955 16.4969 14.718L15.2122 16.0742C14.6219 16.6973 13.6614 16.6971 13.0713 16.0744L7.50303 10.1912C6.91135 9.56663 6.91126 8.55568 7.50303 7.93097C7.70995 7.71254 8.30412 7.0853 8.78768 6.57483C9.56346 5.75593 9.5743 4.42163 8.78693 3.59053L5.96142 0.617157C5.18222 -0.205359 3.91435 -0.205359 3.13724 0.615001C2.55573 1.22353 2.36817 1.41984 2.10743 1.6927C-0.702453 4.65891 -0.702453 9.4853 2.10729 12.4514L10.93 21.77C13.7464 24.7432 18.3049 24.7435 21.1216 21.77L22.1494 20.6851C22.9286 19.8625 22.9286 18.5241 22.1494 17.7016ZM4.07727 1.61166C4.33699 1.33749 4.75954 1.33744 5.0201 1.61241L7.84561 4.58578C8.10595 4.86061 8.10595 5.30541 7.84561 5.58029L7.37453 6.07754L3.60863 2.10206L4.07727 1.61166ZM11.8722 20.7756L3.0495 11.457C0.875572 9.16205 0.756082 5.55854 2.68201 3.11292L6.43698 7.07686C5.45033 8.2576 5.49145 10.0568 6.56074 11.1856L12.1288 17.0685C12.1288 17.0685 12.1289 17.0686 12.129 17.0687C13.1971 18.1963 14.9014 18.2425 16.0212 17.1995L19.7763 21.1636C17.467 23.1932 14.0611 23.0863 11.8722 20.7756ZM21.2074 19.6906L20.7363 20.1879L16.9679 16.2098L17.4389 15.7125C17.6987 15.4383 18.1213 15.4383 18.3811 15.7125L21.2073 18.6961C21.4671 18.9703 21.4671 19.4164 21.2074 19.6906Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </span>
+                    <span class="visually-hidden">phones</span>
+                  </a>
+                </li>
+                <li class="extra-header__menu-item">
+                  <a href="/" class="extra-header__menu-link">
+                    <span>
+                      <svg
+                        width="22"
+                        height="29"
+                        viewBox="0 0 22 29"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M10.5941 15.3117C10.6201 15.3117 10.6461 15.3117 10.6773 15.3117C10.6877 15.3117 10.6981 15.3117 10.7085 15.3117C10.7242 15.3117 10.745 15.3117 10.7606 15.3117C12.2849 15.2831 13.5179 14.6931 14.4283 13.5646C16.4313 11.0784 16.0983 6.81654 16.0619 6.40983C15.9319 3.35661 14.6208 1.89587 13.5387 1.21419C12.7323 0.704369 11.7907 0.429408 10.7398 0.406494H10.7033C10.6981 0.406494 10.6877 0.406494 10.6825 0.406494H10.6513C10.0738 0.406494 8.9397 0.509605 7.85237 1.19128C6.75985 1.87296 5.42801 3.33369 5.29795 6.40983C5.26153 6.81654 4.92857 11.0784 6.93153 13.5646C7.83677 14.6931 9.06976 15.2831 10.5941 15.3117ZM6.68701 6.55304C6.68701 6.53585 6.69222 6.51867 6.69222 6.50721C6.8639 2.39997 9.51197 1.95888 10.6461 1.95888H10.6669C10.6773 1.95888 10.6929 1.95888 10.7085 1.95888C12.1132 1.99325 14.5012 2.62337 14.6624 6.50721C14.6624 6.52439 14.6624 6.54158 14.6676 6.55304C14.6728 6.59313 15.037 10.4884 13.3826 12.5392C12.7271 13.3526 11.8531 13.7536 10.7033 13.7651C10.6929 13.7651 10.6877 13.7651 10.6773 13.7651C10.6669 13.7651 10.6617 13.7651 10.6513 13.7651C9.50677 13.7536 8.62755 13.3526 7.97723 12.5392C6.32804 10.4999 6.68181 6.58741 6.68701 6.55304Z"
+                          fill="white"
+                        />
+                        <path
+                          d="M21.3682 22.3805C21.3682 22.3748 21.3682 22.3691 21.3682 22.3633C21.3682 22.3175 21.363 22.2717 21.363 22.2201C21.3318 21.0859 21.2641 18.4337 19.0062 17.5859C18.9906 17.5801 18.9698 17.5744 18.9542 17.5687C16.6079 16.9099 14.6569 15.4206 14.6361 15.4034C14.3188 15.157 13.8817 15.243 13.658 15.5924C13.4343 15.9418 13.5124 16.423 13.8297 16.6693C13.9182 16.7381 15.9888 18.3248 18.5796 19.0581C19.7918 19.5335 19.9271 20.9599 19.9635 22.266C19.9635 22.3175 19.9635 22.3633 19.9687 22.4092C19.9739 22.9247 19.9427 23.721 19.8594 24.1792C19.0166 24.7062 15.713 26.5279 10.6874 26.5279C5.68257 26.5279 2.35816 24.7005 1.51015 24.1735C1.42691 23.7152 1.39049 22.919 1.40089 22.4034C1.40089 22.3576 1.4061 22.3118 1.4061 22.2602C1.44251 20.9542 1.57778 19.5278 2.78997 19.0523C5.38082 18.3191 7.45143 16.7266 7.53987 16.6636C7.85722 16.4173 7.93526 15.9361 7.71155 15.5867C7.48784 15.2372 7.05083 15.1513 6.73348 15.3976C6.71267 15.4148 4.77213 16.9042 2.41539 17.563C2.39458 17.5687 2.37897 17.5744 2.36336 17.5801C0.105466 18.4337 0.0378337 21.0859 0.00661858 22.2144C0.00661858 22.266 0.00661846 22.3118 0.00141594 22.3576C0.00141594 22.3633 0.00141594 22.3691 0.00141594 22.3748C-0.00378658 22.6727 -0.00898899 24.2021 0.266745 24.9697C0.31877 25.1187 0.412415 25.2447 0.537276 25.3306C0.693352 25.4452 4.43396 28.0688 10.6926 28.0688C16.9512 28.0688 20.6918 25.4395 20.8479 25.3306C20.9676 25.2447 21.0664 25.1187 21.1185 24.9697C21.3786 24.2079 21.3734 22.6784 21.3682 22.3805Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </span>
+                    <span class="visually-hidden">personal account</span>
+                  </a>
+                </li>
+                <li class="extra-header__menu-item">
+                  <a href="/" class="extra-header__menu-link">
+                    <span>
+                      <svg
+                        width="28"
+                        height="27"
+                        viewBox="0 0 28 27"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M20.1004 0C17.7169 0 15.4856 1.07339 14 2.87184C12.5144 1.07333 10.2832 0 7.89957 0C3.54375 0 0 3.52462 0 7.85705C0 11.2495 2.03385 15.1734 6.04492 19.5198C9.13175 22.8646 12.4897 25.4544 13.4454 26.1685L13.9998 26.5828L14.5543 26.1686C15.5099 25.4545 18.868 22.8647 21.9549 19.52C25.9661 15.1736 28 11.2496 28 7.85705C28 3.52462 24.4562 0 20.1004 0ZM20.5948 18.2782C18.0558 21.0293 15.3242 23.2533 13.9998 24.2783C12.6755 23.2533 9.944 21.0293 7.40498 18.2781C3.76837 14.3375 1.84615 10.734 1.84615 7.85705C1.84615 4.53717 4.56172 1.83622 7.89957 1.83622C10.0961 1.83622 12.1243 3.02694 13.1927 4.94377L14 6.3923L14.8073 4.94377C15.8756 3.027 17.9038 1.83622 20.1004 1.83622C23.4383 1.83622 26.1538 4.53711 26.1538 7.85705C26.1538 10.7341 24.2316 14.3377 20.5948 18.2782Z"
+                          fill="black"
+                        />
+                      </svg>
+                    </span>
+                    <span class="visually-hidden">favorite</span>
+                  </a>
+                </li>
+                <li class="extra-header__menu-item">
+                  <a href="/" class="extra-header__menu-link">
+                    <div class="basket__icon">
+                      <span>
+                        <svg
+                          width="32"
+                          height="34"
+                          viewBox="0 0 32 34"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M7.13008 7.76882H29.7121C30.3649 7.76882 30.8427 8.38411 30.681 9.01655L28.7801 16.4506C28.4405 17.7785 27.2442 18.7074 25.8736 18.7074H9.02537M0 1.49957H4.65214C5.63535 1.49957 6.47274 2.21422 6.62728 3.18521L9.6467 22.1562C9.80125 23.1272 10.6386 23.8418 11.6218 23.8418H28.203"
+                            stroke="black"
+                            stroke-width="1.5"
+                          />
+                          <path
+                            d="M15.7689 30.2656C15.7689 31.5678 14.7584 32.5758 13.5695 32.5758C12.3807 32.5758 11.3701 31.5678 11.3701 30.2656C11.3701 28.9634 12.3807 27.9554 13.5695 27.9554C14.7584 27.9554 15.7689 28.9634 15.7689 30.2656Z"
+                            stroke="black"
+                            stroke-width="1.5"
+                          />
+                          <path
+                            d="M28.746 30.2656C28.746 31.5678 27.7354 32.5758 26.5466 32.5758C25.3577 32.5758 24.3472 31.5678 24.3472 30.2656C24.3472 28.9634 25.3577 27.9554 26.5466 27.9554C27.7354 27.9554 28.746 28.9634 28.746 30.2656Z"
+                            stroke="black"
+                            stroke-width="1.5"
+                          />
+                        </svg>
+                      </span>
+                      <span class="basket__icon-count">0</span>
+                      <span class="visually-hidden">basket</span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <div class="extra-header__room hidden-mobile">
+              <a href="/" class="extra-header__room-link">
+                <svg
+                  width="22"
+                  height="29"
+                  viewBox="0 0 22 29"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.5941 15.3117C10.6201 15.3117 10.6461 15.3117 10.6773 15.3117C10.6877 15.3117 10.6981 15.3117 10.7085 15.3117C10.7242 15.3117 10.745 15.3117 10.7606 15.3117C12.2849 15.2831 13.5179 14.6931 14.4283 13.5646C16.4313 11.0784 16.0983 6.81654 16.0619 6.40983C15.9319 3.35661 14.6208 1.89587 13.5387 1.21419C12.7323 0.704369 11.7907 0.429408 10.7398 0.406494H10.7033C10.6981 0.406494 10.6877 0.406494 10.6825 0.406494H10.6513C10.0738 0.406494 8.9397 0.509605 7.85237 1.19128C6.75985 1.87296 5.42801 3.33369 5.29795 6.40983C5.26153 6.81654 4.92857 11.0784 6.93153 13.5646C7.83677 14.6931 9.06976 15.2831 10.5941 15.3117ZM6.68701 6.55304C6.68701 6.53585 6.69222 6.51867 6.69222 6.50721C6.8639 2.39997 9.51197 1.95888 10.6461 1.95888H10.6669C10.6773 1.95888 10.6929 1.95888 10.7085 1.95888C12.1132 1.99325 14.5012 2.62337 14.6624 6.50721C14.6624 6.52439 14.6624 6.54158 14.6676 6.55304C14.6728 6.59313 15.037 10.4884 13.3826 12.5392C12.7271 13.3526 11.8531 13.7536 10.7033 13.7651C10.6929 13.7651 10.6877 13.7651 10.6773 13.7651C10.6669 13.7651 10.6617 13.7651 10.6513 13.7651C9.50677 13.7536 8.62755 13.3526 7.97723 12.5392C6.32804 10.4999 6.68181 6.58741 6.68701 6.55304Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M21.3682 22.3805C21.3682 22.3748 21.3682 22.3691 21.3682 22.3633C21.3682 22.3175 21.363 22.2717 21.363 22.2201C21.3318 21.0859 21.2641 18.4337 19.0062 17.5859C18.9906 17.5801 18.9698 17.5744 18.9542 17.5687C16.6079 16.9099 14.6569 15.4206 14.6361 15.4034C14.3188 15.157 13.8817 15.243 13.658 15.5924C13.4343 15.9418 13.5124 16.423 13.8297 16.6693C13.9182 16.7381 15.9888 18.3248 18.5796 19.0581C19.7918 19.5335 19.9271 20.9599 19.9635 22.266C19.9635 22.3175 19.9635 22.3633 19.9687 22.4092C19.9739 22.9247 19.9427 23.721 19.8594 24.1792C19.0166 24.7062 15.713 26.5279 10.6874 26.5279C5.68257 26.5279 2.35816 24.7005 1.51015 24.1735C1.42691 23.7152 1.39049 22.919 1.40089 22.4034C1.40089 22.3576 1.4061 22.3118 1.4061 22.2602C1.44251 20.9542 1.57778 19.5278 2.78997 19.0523C5.38082 18.3191 7.45143 16.7266 7.53987 16.6636C7.85722 16.4173 7.93526 15.9361 7.71155 15.5867C7.48784 15.2372 7.05083 15.1513 6.73348 15.3976C6.71267 15.4148 4.77213 16.9042 2.41539 17.563C2.39458 17.5687 2.37897 17.5744 2.36336 17.5801C0.105466 18.4337 0.0378337 21.0859 0.00661858 22.2144C0.00661858 22.266 0.00661846 22.3118 0.00141594 22.3576C0.00141594 22.3633 0.00141594 22.3691 0.00141594 22.3748C-0.00378658 22.6727 -0.00898899 24.2021 0.266745 24.9697C0.31877 25.1187 0.412415 25.2447 0.537276 25.3306C0.693352 25.4452 4.43396 28.0688 10.6926 28.0688C16.9512 28.0688 20.6918 25.4395 20.8479 25.3306C20.9676 25.2447 21.0664 25.1187 21.1185 24.9697C21.3786 24.2079 21.3734 22.6784 21.3682 22.3805Z"
+                    fill="white"
+                  />
+                </svg>
+                <span>Личный кабинет</span>
+              </a>
+            </div>
+            <div class="extra-header__burger-menu burger-menu visible-mobile">
+              <button
+                class="burger-menu__button"
+                type="button"
+                aria-expanded="false"
+                aria-controls="burger-button"
+              >
+                <span class="visually-hidden">Open navigation menu</span>
+              </button>
+              <div class="burger-menu__body">
+                <nav class="burger-menu__list-wrapper enhanced">
+                  <ul class="burger-menu__list" id="burger-button" hidden>
+                    <li class="burger-menu__list-item">
+                      <a href="/" class="burger-menu__list-link"
+                        >Личный кабинет</a
+                      >
+                    </li>
+                    <li class="burger-menu__list-item" data-has-children>
+                      <button
+                        class="burger-menu__list-button"
+                        aria-expanded="false"
+                        aria-controls="catalog-submenu"
+                      >
+                        Каталог таваров
+                      </button>
+                      <ul class="burger-menu__list" id="catalog-submenu" hidden>
+                        <li class="burger-menu__list-item">
+                          <button
+                            class="burger-menu__back"
+                            aria-expanded="false"
+                            aria-controls="catalog-submenu"
+                          >
+                            <svg
+                              width="20"
+                              height="20"
+                              viewBox="0 0 20 20"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M5.34517 10.8333L10.5892 16.0774L9.41074 17.2559L2.15482 10L9.41074 2.74408L10.5892 3.92259L5.34517 9.16667H17.5V10.8333H5.34517Z"
+                                fill="white"
+                              />
+                            </svg>
+                            <span>Назад</span>
+                          </button>
+                        </li>
+                        <li class="burger-menu__list-item">
+                          <button
+                            class="burger-menu__list-button"
+                            aria-expanded="false"
+                            aria-controls="submenu-knives"
+                          >
+                            Каталог ножей
+                          </button>
+                          <ul
+                            class="burger-menu__list"
+                            id="submenu-knives"
+                            hidden
+                          >
+                            <li class="burger-menu__list-item">
+                              <button
+                                class="burger-menu__back"
+                                aria-expanded="false"
+                                aria-controls="submenu-knives"
+                              >
+                                <svg
+                                  width="20"
+                                  height="20"
+                                  viewBox="0 0 20 20"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M5.34517 10.8333L10.5892 16.0774L9.41074 17.2559L2.15482 10L9.41074 2.74408L10.5892 3.92259L5.34517 9.16667H17.5V10.8333H5.34517Z"
+                                    fill="white"
+                                  />
+                                </svg>
+                                <span>Назад</span>
+                              </button>
+                            </li>
+                            <li class="burger-menu__list-item">
+                              <a href="#" class="burger-menu__list-link">
+                                Разделочные ножи
+                              </a>
+                            </li>
+                            <li class="burger-menu__list-item">
+                              <a href="#" class="burger-menu__list-link">
+                                Туристические ножи
+                              </a>
+                            </li>
+                            <li class="burger-menu__list-item">
+                              <a href="#" class="burger-menu__list-link">
+                                Ножи охотничьи
+                              </a>
+                            </li>
+                            <li class="burger-menu__list-item">
+                              <a href="#" class="burger-menu__list-link">
+                                Булатные ножи
+                              </a>
+                            </li>
+                            <li class="burger-menu__list-item">
+                              <a href="#" class="burger-menu__list-link">
+                                Ножи из дамаска
+                              </a>
+                            </li>
+                            <li class="burger-menu__list-item">
+                              <a href="#" class="burger-menu__list-link">
+                                Тактического назначения
+                              </a>
+                            </li>
+                            <li class="burger-menu__list-item">
+                              <a href="#" class="burger-menu__list-link">
+                                Метательные ножи
+                              </a>
+                            </li>
+                            <li class="burger-menu__list-item">
+                              <a href="#" class="burger-menu__list-link">
+                                Мачете и кукри
+                              </a>
+                            </li>
+                            <li class="burger-menu__list-item">
+                              <a href="#" class="burger-menu__list-link">
+                                Ножи кухонные
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="burger-menu__list-item">
+                          <button
+                            class="burger-menu__list-button"
+                            aria-expanded="false"
+                            aria-controls="submenu-blades"
+                          >
+                            Клинковое оружие
+                          </button>
+                        </li>
+                        <li class="burger-menu__list-item">
+                          <button
+                            class="burger-menu__list-button"
+                            aria-expanded="false"
+                            aria-controls="submenu-souvenirs"
+                          >
+                            Сувенирные изделия
+                          </button>
+                        </li>
+                        <li class="burger-menu__list-item">
+                          <button
+                            class="burger-menu__list-button"
+                            aria-expanded="false"
+                            aria-controls="submenu-lamps"
+                          >
+                            Фонари ARMYTEK
+                          </button>
+                        </li>
+                        <li class="burger-menu__list-item">
+                          <button
+                            class="burger-menu__list-button"
+                            aria-expanded="false"
+                            aria-controls="submenu-related-products"
+                          >
+                            Сопуствующие товары
+                          </button>
+                        </li>
+                        <li class="burger-menu__list-item">
+                          <button
+                            class="burger-menu__list-button"
+                            aria-expanded="false"
+                            aria-controls="submenu-axes"
+                          >
+                            Топоры
+                          </button>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="burger-menu__list-item">
+                      <a href="/" class="burger-menu__list-link">Контакты</a>
+                    </li>
+                    <li class="burger-menu__list-item">
+                      <a href="/" class="burger-menu__list-link">Новости</a>
+                    </li>
+                    <li class="burger-menu__list-item">
+                      <a href="/" class="burger-menu__list-link"
+                        >Оплата и доставка</a
+                      >
+                    </li>
+                    <li class="burger-menu__list-item">
+                      <a href="/" class="burger-menu__list-link">О нас</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header__body">
+          <div class="header-info container">
+            <a href="/" class="header-info__logo logo">
+              <img
+                src="./images/icons/logo.svg"
+                alt="ZLATMAX"
+                class="logo__image"
+                width="190"
+                height="43"
+                loading="lazy"
+              />
+            </a>
+            <div class="header-info__search">
+              <form class="header-info__form search-form">
+                <button class="search-form__button" type="submit">
+                  <svg
+                    width="13"
+                    height="12"
+                    viewBox="0 0 13 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      cx="4.5"
+                      cy="4.5"
+                      r="4"
+                      stroke="black"
+                      stroke-opacity="0.5"
+                    />
+                    <line
+                      y1="-0.5"
+                      x2="6.55661"
+                      y2="-0.5"
+                      transform="matrix(0.709901 0.704302 -0.709901 0.704302 7 7)"
+                      stroke="black"
+                      stroke-opacity="0.5"
+                    />
+                  </svg>
+                </button>
+                <label class="search-form__label visually-hidden" for="search"
+                  >Поиск</label
+                >
+                <input
+                  type="search"
+                  id="search"
+                  name="search"
+                  class="search-form__input"
+                  placeholder="Поиск"
+                />
+              </form>
+            </div>
+            <div class="header-info__actions hidden-mobile">
+              <a href="/" class="header-info__location">
+                <svg
+                  width="17"
+                  height="25"
+                  viewBox="0 0 17 25"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.5 0C3.8131 0 0 3.85087 0 8.5842C0 10.1834 0.438647 11.7441 1.26881 13.0982L8.01616 24.0791C8.14541 24.2895 8.37311 24.4173 8.61801 24.4173C8.6199 24.4173 8.62174 24.4173 8.62363 24.4173C8.87065 24.4153 9.09883 24.2836 9.22571 24.0695L15.8011 12.9822C16.5854 11.6568 17 10.136 17 8.5842C17 3.85087 13.1869 0 8.5 0ZM14.5853 12.2477L8.60729 22.3278L2.47289 12.3444C1.78188 11.2174 1.40722 9.91714 1.40722 8.5842C1.40722 4.63976 4.59425 1.42116 8.5 1.42116C12.4058 1.42116 15.5881 4.63976 15.5881 8.5842C15.5881 9.87761 15.2381 11.1446 14.5853 12.2477Z"
+                    fill="black"
+                  />
+                  <path
+                    d="M8.49647 3.61737C5.89259 3.61737 3.77417 5.64581 3.77417 8.13909C3.77417 10.6164 5.85812 12.6608 8.49647 12.6608C11.1673 12.6608 13.2188 10.5892 13.2188 8.13909C13.2188 5.64581 11.1003 3.61737 8.49647 3.61737ZM8.49647 11.1636C6.75147 11.1636 5.33777 9.80544 5.33777 8.13909C5.33777 6.47691 6.76055 5.11456 8.49647 5.11456C10.2324 5.11456 11.6499 6.47691 11.6499 8.13909C11.6499 9.78113 10.2691 11.1636 8.49647 11.1636Z"
+                    fill="black"
+                  />
+                </svg>
+                <span>Москва</span>
+              </a>
+              <div class="header-info__contacts phones">
+                <div class="phones__inner">
+                  <a href="tel:+88007774967" class="phones__tel"
+                    >8-800-777-49-67</a
+                  >
+                  <button
+                    class="phones__button-list"
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="list"
+                  >
+                    <svg
+                      width="16"
+                      height="10"
+                      viewBox="0 0 16 10"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M7.11323 9.2309L0.324654 2.00808C-0.107404 1.54862 -0.107404 0.803689 0.324655 0.344454C0.756329 -0.114819 1.45646 -0.114819 1.8881 0.344454L7.89495 6.73553L13.9016 0.34464C14.3334 -0.114632 15.0335 -0.114632 15.4652 0.34464C15.897 0.803913 15.897 1.54881 15.4652 2.00827L8.6765 9.23108C8.46056 9.46072 8.17784 9.57541 7.89498 9.57541C7.61199 9.57541 7.32906 9.4605 7.11323 9.2309Z"
+                        fill="#E8AA31"
+                      />
+                    </svg>
+                    <span class="visually-hidden">list phones</span>
+                  </button>
+                  <ul class="phones__list" aria-hidden="true" id="list">
+                    <li class="phones__list-item">
+                      <a
+                        href="tel:+88007774968"
+                        class="phones__list-link"
+                        tabindex="-1"
+                        >8-800-777-49-68</a
+                      >
+                    </li>
+                    <li class="phones__list-item">
+                      <a
+                        href="tel:+88007774969"
+                        class="phones__list-link"
+                        tabindex="-1"
+                        >8-800-777-49-69</a
+                      >
+                    </li>
+                    <li class="phones__list-item">
+                      <a
+                        href="tel:+88007774970"
+                        class="phones__list-link"
+                        tabindex="-1"
+                        >8-800-777-49-70</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <button class="phones__button" type="button">
+                  Заказать звонок
+                </button>
+              </div>
+              <a href="/" class="header-info__favorite">
+                <svg
+                  width="28"
+                  height="27"
+                  viewBox="0 0 28 27"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M20.1004 0C17.7169 0 15.4856 1.07339 14 2.87184C12.5144 1.07333 10.2832 0 7.89957 0C3.54375 0 0 3.52462 0 7.85705C0 11.2495 2.03385 15.1734 6.04492 19.5198C9.13175 22.8646 12.4897 25.4544 13.4454 26.1685L13.9998 26.5828L14.5543 26.1686C15.5099 25.4545 18.868 22.8647 21.9549 19.52C25.9661 15.1736 28 11.2496 28 7.85705C28 3.52462 24.4562 0 20.1004 0ZM20.5948 18.2782C18.0558 21.0293 15.3242 23.2533 13.9998 24.2783C12.6755 23.2533 9.944 21.0293 7.40498 18.2781C3.76837 14.3375 1.84615 10.734 1.84615 7.85705C1.84615 4.53717 4.56172 1.83622 7.89957 1.83622C10.0961 1.83622 12.1243 3.02694 13.1927 4.94377L14 6.3923L14.8073 4.94377C15.8756 3.027 17.9038 1.83622 20.1004 1.83622C23.4383 1.83622 26.1538 4.53711 26.1538 7.85705C26.1538 10.7341 24.2316 14.3377 20.5948 18.2782Z"
+                    fill="black"
+                  />
+                </svg>
+              </a>
+              <div class="header-info__basket basket">
+                <div class="basket__icon">
+                  <svg
+                    width="32"
+                    height="34"
+                    viewBox="0 0 32 34"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.13008 7.76882H29.7121C30.3649 7.76882 30.8427 8.38411 30.681 9.01655L28.7801 16.4506C28.4405 17.7785 27.2442 18.7074 25.8736 18.7074H9.02537M0 1.49957H4.65214C5.63535 1.49957 6.47274 2.21422 6.62728 3.18521L9.6467 22.1562C9.80125 23.1272 10.6386 23.8418 11.6218 23.8418H28.203"
+                      stroke="black"
+                      stroke-width="1.5"
+                    />
+                    <path
+                      d="M15.7689 30.2656C15.7689 31.5678 14.7584 32.5758 13.5695 32.5758C12.3807 32.5758 11.3701 31.5678 11.3701 30.2656C11.3701 28.9634 12.3807 27.9554 13.5695 27.9554C14.7584 27.9554 15.7689 28.9634 15.7689 30.2656Z"
+                      stroke="black"
+                      stroke-width="1.5"
+                    />
+                    <path
+                      d="M28.746 30.2656C28.746 31.5678 27.7354 32.5758 26.5466 32.5758C25.3577 32.5758 24.3472 31.5678 24.3472 30.2656C24.3472 28.9634 25.3577 27.9554 26.5466 27.9554C27.7354 27.9554 28.746 28.9634 28.746 30.2656Z"
+                      stroke="black"
+                      stroke-width="1.5"
+                    />
+                  </svg>
+                  <span class="basket__icon-count">0</span>
+                  <span class="visually-hidden">basket</span>
+                </div>
+                <div class="basket__body">
+                  <p>0 р.</p>
+                  <a href="/" class="basket__link">Оформить заказ</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header__catalog hidden-mobile">
+          <div class="catalog container">
+            <nav class="catalog__menu">
+              <ul class="catalog__menu-list">
+                <li class="catalog__menu-item">
+                  <a href="/" class="catalog__menu-link">Каталог ножей</a>
+                  <div class="catalog__sub-menu-inner">
+                    <div class="catalog__sub-menu sub-catalog container">
+                      <nav class="sub-catalog__menu">
+                        <ul class="sub-catalog__menu-list">
+                          <li class="sub-catalog__menu-item">
+                            <div class="sub-catalog__menu-link-inner">
+                              <a href="" class="sub-catalog__menu-link"
+                                >Категория ножей</a
+                              >
+                              <ul
+                                class="sub-catalog__menu-item-catalog item-catalog"
+                              >
+                                <li class="item-catalog__item">
+                                  <a href="/" class="item-catalog__item-link"
+                                    >Разделочные ножи</a
+                                  >
+                                </li>
+                                <li class="item-catalog__item">
+                                  <a href="/" class="item-catalog__item-link"
+                                    >Туристические ножи</a
+                                  >
+                                </li>
+                                <li class="item-catalog__item">
+                                  <a href="/" class="item-catalog__item-link"
+                                    >Ножи охотничьи</a
+                                  >
+                                </li>
+                                <li class="item-catalog__item">
+                                  <a href="/" class="item-catalog__item-link"
+                                    >Булатные ножи</a
+                                  >
+                                </li>
+                                <li class="item-catalog__item">
+                                  <a href="/" class="item-catalog__item-link"
+                                    >Ножи из дамаска</a
+                                  >
+                                </li>
+                                <li class="item-catalog__item">
+                                  <a href="/" class="item-catalog__item-link"
+                                    >Тактического назначения</a
+                                  >
+                                </li>
+                                <li class="item-catalog__item">
+                                  <a href="/" class="item-catalog__item-link"
+                                    >Метательные ножи</a
+                                  >
+                                </li>
+                                <li class="item-catalog__item">
+                                  <a href="/" class="item-catalog__item-link"
+                                    >Мачете и кукри</a
+                                  >
+                                </li>
+                                <li class="item-catalog__item">
+                                  <a href="/" class="item-catalog__item-link"
+                                    >Ножи кухонные</a
+                                  >
+                                </li>
+                              </ul>
+                            </div>
+                            <a href="" class="sub-catalog__menu-link-all"
+                              >Смотреть все</a
+                            >
+                          </li>
+                          <li class="sub-catalog__menu-item">
+                            <div class="sub-catalog__menu-link-inner">
+                              <a href="" class="sub-catalog__menu-link"
+                                >Производство ножей</a
+                              >
+                              <ul
+                                class="sub-catalog__menu-item-catalog item-catalog"
+                              >
+                                <li class="item-catalog__item">
+                                  <a href="/" class="item-catalog__item-link"
+                                    >Ножи АИР</a
+                                  >
+                                </li>
+                                <li class="item-catalog__item">
+                                  <a href="/" class="item-catalog__item-link"
+                                    >Ножи ЗИК</a
+                                  >
+                                </li>
+                                <li class="item-catalog__item">
+                                  <a href="/" class="item-catalog__item-link"
+                                    >Ножи ЗЗОСС</a
+                                  >
+                                </li>
+                                <li class="item-catalog__item">
+                                  <a href="/" class="item-catalog__item-link"
+                                    >Ножи РОСоружие</a
+                                  >
+                                </li>
+                                <li class="item-catalog__item">
+                                  <a href="/" class="item-catalog__item-link"
+                                    >Ножи Оружейник</a
+                                  >
+                                </li>
+                                <li class="item-catalog__item">
+                                  <a href="/" class="item-catalog__item-link"
+                                    >Булат Сергея Баранова</a
+                                  >
+                                </li>
+                                <li class="item-catalog__item">
+                                  <a href="/" class="item-catalog__item-link"
+                                    >Булат Андрея Умерова</a
+                                  >
+                                </li>
+                                <li class="item-catalog__item">
+                                  <a href="/" class="item-catalog__item-link"
+                                    >Ножи Златко</a
+                                  >
+                                </li>
+                                <li class="item-catalog__item">
+                                  <a href="/" class="item-catalog__item-link"
+                                    >Ножи Стиль-М</a
+                                  >
+                                </li>
+                                <li class="item-catalog__item">
+                                  <a href="/" class="item-catalog__item-link"
+                                    >Оружейная компания</a
+                                  >
+                                </li>
+                              </ul>
+                            </div>
+                            <a href="" class="sub-catalog__menu-link-all"
+                              >Смотреть все</a
+                            >
+                          </li>
+                          <li class="sub-catalog__menu-item">
+                            <div class="sub-catalog__menu-link-inner">
+                              <a href="" class="sub-catalog__menu-link"
+                                >Ножи по маркам стали</a
+                              >
+                              <ul
+                                class="sub-catalog__menu-item-catalog item-catalog"
+                              >
+                                <li class="item-catalog__item">
+                                  <a href="/" class="item-catalog__item-link"
+                                    >Ножи из стали 40х102С2М</a
+                                  >
+                                </li>
+                                <li class="item-catalog__item">
+                                  <a href="/" class="item-catalog__item-link"
+                                    >Ножи из стали 95х18</a
+                                  >
+                                </li>
+                                <li class="item-catalog__item">
+                                  <a href="/" class="item-catalog__item-link"
+                                    >Ножи из стали 95х18</a
+                                  >
+                                </li>
+                                <li class="item-catalog__item">
+                                  <a href="/" class="item-catalog__item-link"
+                                    >Ножи из стали 110х18м-ШД</a
+                                  >
+                                </li>
+                                <li class="item-catalog__item">
+                                  <a href="/" class="item-catalog__item-link"
+                                    >Ножи из стали ЭИ-107 ТЦ</a
+                                  >
+                                </li>
+                                <li class="item-catalog__item">
+                                  <a href="/" class="item-catalog__item-link"
+                                    >Ножи из стали 50х14МФ</a
+                                  >
+                                </li>
+                                <li class="item-catalog__item">
+                                  <a href="/" class="item-catalog__item-link"
+                                    >Ножи из стали AUS-8</a
+                                  >
+                                </li>
+                                <li class="item-catalog__item">
+                                  <a href="/" class="item-catalog__item-link"
+                                    >Ножи из стали К340</a
+                                  >
+                                </li>
+                                <li class="item-catalog__item">
+                                  <a href="/" class="item-catalog__item-link"
+                                    >Ножи из стали M390</a
+                                  >
+                                </li>
+                                <li class="item-catalog__item">
+                                  <a href="/" class="item-catalog__item-link"
+                                    >Ножи из стали ЭП-766</a
+                                  >
+                                </li>
+                              </ul>
+                            </div>
+                            <a href="" class="sub-catalog__menu-link-all"
+                              >Смотреть все</a
+                            >
+                          </li>
+                          <li class="sub-catalog__menu-item">
+                            <div class="sub-catalog__menu-link-inner">
+                              <a href="" class="sub-catalog__menu-link"
+                                >Заточка и полировка ножей</a
+                              >
+                              <ul
+                                class="sub-catalog__menu-item-catalog item-catalog"
+                              >
+                                <li class="item-catalog__item">
+                                  <a href="/" class="item-catalog__item-link"
+                                    >Паста ГОИ</a
+                                  >
+                                </li>
+                                <li class="item-catalog__item">
+                                  <a href="/" class="item-catalog__item-link"
+                                    >Алмазная паста</a
+                                  >
+                                </li>
+                                <li class="item-catalog__item">
+                                  <a href="/" class="item-catalog__item-link"
+                                    >Бруски и камни для заточки</a
+                                  >
+                                </li>
+                                <li class="item-catalog__item">
+                                  <a href="/" class="item-catalog__item-link"
+                                    >Заточные системы</a
+                                  >
+                                </li>
+                              </ul>
+                            </div>
+                            <a href="" class="sub-catalog__menu-link-all"
+                              >Смотреть все</a
+                            >
+                          </li>
+                          <li class="sub-catalog__menu-item">
+                            <div class="sub-catalog__menu-link-inner">
+                              <a href="" class="sub-catalog__menu-link"
+                                >Ножевая мастерская</a
+                              >
+                              <ul
+                                class="sub-catalog__menu-item-catalog item-catalog"
+                              >
+                                <li class="item-catalog__item">
+                                  <a href="/" class="item-catalog__item-link"
+                                    >Ножевые клинки</a
+                                  >
+                                </li>
+                                <li class="item-catalog__item">
+                                  <a href="/" class="item-catalog__item-link"
+                                    >Заготовки для ножей</a
+                                  >
+                                </li>
+                                <li class="item-catalog__item">
+                                  <a href="/" class="item-catalog__item-link"
+                                    >Литье для ножей</a
+                                  >
+                                </li>
+                                <li class="item-catalog__item">
+                                  <a href="/" class="item-catalog__item-link"
+                                    >Материалы для рукоятей</a
+                                  >
+                                </li>
+                                <li class="item-catalog__item">
+                                  <a href="/" class="item-catalog__item-link"
+                                    >Уход за рукоятиями ножей</a
+                                  >
+                                </li>
+                              </ul>
+                            </div>
+                            <a href="" class="sub-catalog__menu-link-all"
+                              >Смотреть все</a
+                            >
+                          </li>
+                        </ul>
+                      </nav>
+                    </div>
+                  </div>
+                </li>
+                <li class="catalog__menu-item">
+                  <a href="/" class="catalog__menu-link">Клинковое оружие</a>
+                </li>
+                <li class="catalog__menu-item">
+                  <a href="/" class="catalog__menu-link">Сувенирные изделия</a>
+                </li>
+                <li class="catalog__menu-item">
+                  <a href="/" class="catalog__menu-link">Фонари ARMYTEK</a>
+                </li>
+                <li class="catalog__menu-item">
+                  <a href="/" class="catalog__menu-link">Сопуствующие товары</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="section__body">
+          <div class="banner__inner">
+            <div class="banner container">
+              <div class="banner__body">
+                <div class="banner__body-inner">
+                  <h1 class="banner__title">
+                    <span>Интернет магазин сертифицированных</span>
+                    <span class="h1 fw500">златоустовских ножей</span>
+                  </h1>
+                  <div class="banner__description">
+                    <p>
+                      Добро пожаловать на официальный сайт «ЗЛАТМАКС»! В нашем
+                      магазине представлен наиболее широкий выбор Златоустовских
+                      ножей от Златоустовских Оружейных Фабрик и компаний, мы
+                      являемся официальными поставщиками.
+                    </p>
+                  </div>
+                  <a href="/" class="banner__button button hidden-mobile"
+                    >Подробнее</a
+                  >
+                </div>
+                <div class="banner__image-inner">
+                  <img
+                    src="./images/knives.png"
+                    class="banner__image"
+                    alt=""
+                    width="450"
+                    height="500"
+                    loading="lazy"
+                  />
+                  <div
+                    class="banner__image-decor banner__image-decor-1 hidden-mobile"
+                  ></div>
+                  <div
+                    class="banner__image-decor banner__image-decor-2 hidden-mobile"
+                  ></div>
+                  <div
+                    class="banner__image-decor banner__image-decor-3 hidden-mobile"
+                  ></div>
+                </div>
+              </div>
+              <div class="banner__benefits">
+                <h2 class="visually-hidden">Benefits</h2>
+                <ul class="banner__benefits-list grid grid--4">
+                  <li class="banner__benefits-item">
+                    <div class="banner__benefits-item-body">
+                      <img
+                        class="banner__benefits-item-image"
+                        src="./images/guarantee.png"
+                        alt=""
+                        width="64"
+                        height="63"
+                        loading="lazy"
+                      />
+                      <div class="banner__benefits-item-description">
+                        <p>Гарантия 100% возврата денежных средств</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="banner__benefits-item">
+                    <div class="banner__benefits-item-body">
+                      <img
+                        class="banner__benefits-item-image"
+                        src="./images/delivery.png"
+                        alt=""
+                        width="90"
+                        height="60"
+                        loading="lazy"
+                      />
+                      <div class="banner__benefits-item-description">
+                        <p>Доставка по России, Казахстану и Белоруссии</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="banner__benefits-item">
+                    <div class="banner__benefits-item-body">
+                      <img
+                        class="banner__benefits-item-image"
+                        src="./images/order.png"
+                        alt=""
+                        width="74"
+                        height="78"
+                        loading="lazy"
+                      />
+                      <div class="banner__benefits-item-description">
+                        <p>Возможность оформления заказа без регистрации.</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="banner__benefits-item">
+                    <div class="banner__benefits-item-body">
+                      <img
+                        class="banner__benefits-item-image"
+                        src="./images/discounts.png"
+                        alt=""
+                        width="67"
+                        height="66"
+                        loading="lazy"
+                      />
+                      <div class="banner__benefits-item-description">
+                        <p>Скидки постоянным покупателям.</p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container">
+        <div class="section__header">
+          <h2 class="section__title visually-hidden">Catalog</h2>
+        </div>
+        <div class="section__body">
+          <div class="catalog-cards">
+            <ul class="catalog-cards__list grid grid--3">
+              <li class="catalog-cards__list-item">
+                <article class="catalog-cards__list-item catalog-card">
+                  <div class="catalog-card__body">
+                    <h3 class="catalog-card__title">
+                      <a href="#" class="catalog-card__title-link"
+                        >Каталог ножей</a
+                      >
+                    </h3>
+                    <ul class="catalog-card__list">
+                      <li class="catalog-card__list-item">
+                        <a href="#" class="catalog-card__list-link"
+                          >Разделочные</a
+                        >
+                      </li>
+                      <li class="catalog-card__list-item">
+                        <a href="#" class="catalog-card__list-link"
+                          >Туристические</a
+                        >
+                      </li>
+                      <li class="catalog-card__list-item">
+                        <a href="#" class="catalog-card__list-link"
+                          >Охотничьи</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <img
+                    src="./images/catalog-cards/1.png"
+                    class="catalog-card__image catalog-card__image--1"
+                    alt=""
+                    width="270"
+                    height="287"
+                    loading="lazy"
+                  />
+                </article>
+              </li>
+              <li class="catalog-cards__list-item">
+                <article class="catalog-cards__list-item catalog-card">
+                  <div class="catalog-card__body">
+                    <h3 class="catalog-card__title">
+                      <a href="#" class="catalog-card__title-link"
+                        >Среднеклинковое оружие</a
+                      >
+                    </h3>
+                    <ul class="catalog-card__list">
+                      <li class="catalog-card__list-item">
+                        <a href="#" class="catalog-card__list-link"
+                          >Разделочные</a
+                        >
+                      </li>
+                      <li class="catalog-card__list-item">
+                        <a href="#" class="catalog-card__list-link"
+                          >Туристические</a
+                        >
+                      </li>
+                      <li class="catalog-card__list-item">
+                        <a href="#" class="catalog-card__list-link"
+                          >Охотничьи</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <img
+                    src="./images/catalog-cards/2.png"
+                    class="catalog-card__image catalog-card__image--2"
+                    alt=""
+                    width="292"
+                    height="294"
+                    loading="lazy"
+                  />
+                </article>
+              </li>
+              <li class="catalog-cards__list-item">
+                <article class="catalog-cards__list-item catalog-card">
+                  <div class="catalog-card__body">
+                    <h3 class="catalog-card__title">
+                      <a href="#" class="catalog-card__title-link"
+                        >Длинноклинковое оружие</a
+                      >
+                    </h3>
+                    <ul class="catalog-card__list">
+                      <li class="catalog-card__list-item">
+                        <a href="#" class="catalog-card__list-link"
+                          >Разделочные</a
+                        >
+                      </li>
+                      <li class="catalog-card__list-item">
+                        <a href="#" class="catalog-card__list-link"
+                          >Туристические</a
+                        >
+                      </li>
+                      <li class="catalog-card__list-item">
+                        <a href="#" class="catalog-card__list-link"
+                          >Охотничьи</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <img
+                    src="./images/catalog-cards/3.png"
+                    class="catalog-card__image catalog-card__image--3"
+                    alt=""
+                    width="338"
+                    height="255"
+                    loading="lazy"
+                  />
+                </article>
+              </li>
+              <li class="catalog-cards__list-item">
+                <article class="catalog-cards__list-item catalog-card">
+                  <div class="catalog-card__body">
+                    <h3 class="catalog-card__title">
+                      <a href="#" class="catalog-card__title-link"
+                        >Сувенирные изделия</a
+                      >
+                    </h3>
+                    <ul class="catalog-card__list">
+                      <li class="catalog-card__list-item">
+                        <a href="#" class="catalog-card__list-link"
+                          >Разделочные</a
+                        >
+                      </li>
+                      <li class="catalog-card__list-item">
+                        <a href="#" class="catalog-card__list-link"
+                          >Туристические</a
+                        >
+                      </li>
+                      <li class="catalog-card__list-item">
+                        <a href="#" class="catalog-card__list-link"
+                          >Охотничьи</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <img
+                    src="./images/catalog-cards/4.png"
+                    class="catalog-card__image catalog-card__image--4"
+                    alt=""
+                    width="230"
+                    height="286"
+                    loading="lazy"
+                  />
+                </article>
+              </li>
+              <li class="catalog-cards__list-item">
+                <article class="catalog-cards__list-item catalog-card">
+                  <div class="catalog-card__body">
+                    <h3 class="catalog-card__title">
+                      <a href="#" class="catalog-card__title-link"
+                        >Сопутствующие товары</a
+                      >
+                    </h3>
+                    <ul class="catalog-card__list">
+                      <li class="catalog-card__list-item">
+                        <a href="#" class="catalog-card__list-link"
+                          >Разделочные</a
+                        >
+                      </li>
+                      <li class="catalog-card__list-item">
+                        <a href="#" class="catalog-card__list-link"
+                          >Туристические</a
+                        >
+                      </li>
+                      <li class="catalog-card__list-item">
+                        <a href="#" class="catalog-card__list-link"
+                          >Охотничьи</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <img
+                    src="./images/catalog-cards/5.png"
+                    class="catalog-card__image catalog-card__image--5"
+                    alt=""
+                    width="275"
+                    height="272"
+                    loading="lazy"
+                  />
+                </article>
+              </li>
+              <li class="catalog-cards__list-item">
+                <article class="catalog-cards__list-item catalog-card">
+                  <div class="catalog-card__body">
+                    <h3 class="catalog-card__title">
+                      <a href="#" class="catalog-card__title-link"
+                        >Ножевая мастерская</a
+                      >
+                    </h3>
+                    <ul class="catalog-card__list">
+                      <li class="catalog-card__list-item">
+                        <a href="#" class="catalog-card__list-link"
+                          >Разделочные</a
+                        >
+                      </li>
+                      <li class="catalog-card__list-item">
+                        <a href="#" class="catalog-card__list-link"
+                          >Туристические</a
+                        >
+                      </li>
+                      <li class="catalog-card__list-item">
+                        <a href="#" class="catalog-card__list-link"
+                          >Охотничьи</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <img
+                    src="./images/catalog-cards/5.png"
+                    class="catalog-card__image catalog-card__image--6"
+                    alt=""
+                    width="275"
+                    height="272"
+                    loading="lazy"
+                  />
+                </article>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- <section class="section container">
+        <div class="section__header"></div>
+        <div class="section__body"></div>
+      </section> -->
+    </main>
+
+    <script src="./js/phones-list.js"></script>
+    <script src="./js/burger-menu.js"></script>
+  </body>
+</html>
